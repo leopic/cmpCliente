@@ -1,0 +1,1 @@
+angular.module('CarrosApp', ['CarrosApp.services', 'CarrosApp.controllers']);
