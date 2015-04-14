@@ -1,7 +1,7 @@
 angular.module('CarrosApp.services', [])
     .service('CarrosService', function($http) {
         var carrosAPI = {},
-            basePath = 'http://boot2docker:4000/api/carros';
+            basePath = 'http://boot2docker:4002/api/carros';
 
         carrosAPI.get = function() {
             return $http({
@@ -12,6 +12,6 @@ angular.module('CarrosApp.services', [])
             return $http({
                 url: basePath + '/' + id
             });
-        }
+        };
         return carrosAPI;
     });
